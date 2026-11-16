@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="李佳佳 Lyoran Lee 的个人作品集 — 插画 / 园林景观 / IP 形象 / 视觉设计">
+    <title>李佳佳 · Lyoran Lee — Portfolio 2026</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- 访问公告 -->
+    <div class="notice-mask" id="noticeMask" role="dialog" aria-modal="true" aria-labelledby="noticeTitle">
+        <div class="notice-box">
+            <div class="notice-head">
+                <span class="notice-kicker">NOTICE</span>
+                <h2 id="noticeTitle">访问须知与版权声明</h2>
+            </div>
+            <div class="notice-body">
+                <section class="notice-item">
+                    <span class="notice-no">01</span>
+                    <div>
+                        <h3>关于本站</h3>
+                        <p>本站为本人个人作品集网站，主要用于求职应聘及个人设计成果展示，集中呈现我在插画创作、园林景观设计、IP 形象塑造与视觉设计等方向的学习与实践成果。欢迎各界人士浏览、交流。</p>
+                    </div>
+                </section>
+                <section class="notice-item">
+                    <span class="notice-no">02</span>
+                    <div>
+                        <h3>浏览提示</h3>
+                        <p>站内收录作品图片数量较多、分辨率较高，受移动设备性能与网络环境影响，图片加载可能略有延迟。为获得更完整、流畅的浏览体验，建议使用电脑端浏览器访问。</p>
+                    </div>
+                </section>
+                <section class="notice-item">
+                    <span class="notice-no">03</span>
+                    <div>
+                        <h3>版权声明</h3>
+                        <p>站内全部图像、插画及设计素材之著作权均归本人所有。未经本人书面许可，任何单位或个人不得以任何形式篡改、复制、转载、传播或用于商业及盈利用途。对侵犯上述权利的行为，本人保留依法追究法律责任的权利。</p>
+                    </div>
+                </section>
+            </div>
+            <div class="notice-foot">
+                <p class="notice-sign">李佳佳 · LYORAN LEE　/　PORTFOLIO 2026</p>
+                <button class="notice-btn" id="noticeBtn" disabled>请阅读 5 秒后继续</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 顶部导航 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-wrap">
+            <a href="#home" class="logo">LYORAN LEE<span class="logo-dot">.</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#works" class="nav-link">WORKS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            <div class="nav-actions">
+                <a class="icon-btn" href="mailto:1031989883@qq.com" aria-label="发送邮件" title="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
+                </a>
+                <button class="icon-btn menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏 -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <p class="eyebrow">CREATIVE PORTFOLIO — 2026</p>
+                <h1 class="hero-title">李佳佳<span>作品集</span></h1>
+                <div class="rule"></div>
+                <div class="hero-meta">
+                    <span>Portfolio 2026</span>
+                    <span>STUDIO / VISUAL ART</span>
+                </div>
+                <p class="script hero-script">Creative Professional</p>
+                <p class="hero-desc">擅长视觉设计 · 插画 · 园林景观 · IP 形象<br>用线条与留白，构建有温度的设计语言。</p>
+                <div class="hero-buttons">
+                    <a href="#works" class="btn btn-solid">浏览作品</a>
+                    <a href="#about" class="btn btn-line">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal" data-delay="1">
+                <div class="wipe-frame" id="wipeFrame" data-base="images/hero.jpg" data-cover="images/覆盖.jpg" aria-label="移动鼠标擦拭，露出黑白线稿">
+                    <img class="wipe-base" alt="黑白线稿">
+                    <canvas class="wipe-cover"></canvas>
+                    <span class="wipe-hint">移动鼠标擦拭 · MOVE TO REVEAL</span>
+                    <button class="wipe-reset" id="wipeReset" aria-label="重置擦拭效果" title="重置">↺</button>
+                </div>
+                <p class="caption">— 擦除色彩 · 发现线稿 / WIPE TO REVEAL</p>
+            </div>
+        </div>
+        <a href="#about" class="scroll-cue" aria-label="向下滚动"><span>SCROLL</span><i></i></a>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section about">
+        <div class="container">
+            <p class="section-index">01 / ABOUT</p>
+            <h2 class="big-script reveal">LYORAN LEE</h2>
+            <p class="script about-script reveal">Creative Professional</p>
+
+            <div class="about-grid">
+                <div class="about-portrait reveal">
+                    <div class="img-frame" data-img="images/avatar.jpg" data-label="个人照片" data-hint="建议上传竖版肖像照">
+                        <div class="frame-inner">
+                            <span class="frame-label">PORTRAIT</span>
+                            <span class="frame-file">images/avatar.jpg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal" data-delay="1">
+                    <p class="hello">HI 我是 <strong>李佳佳</strong></p>
+                    <p class="lead">熟练掌握 PS · CAD · LU · GIS · SU<br><span>擅长视觉设计</span></p>
+                    <p class="about-text">深耕插画创作、园林庭院方案设计与品牌 IP 形象塑造，坚持精致审美与落地性，把艺术创意转化为可落地的视觉作品。</p>
+
+                    <div class="about-columns">
+                        <div class="about-col">
+                            <h3>个人荣誉 <em>PERSONAL HONOR</em></h3>
+                            <ul class="honor-list">
+                                <li>2023–2024 学年 校级奖学金三等奖</li>
+                                <li>2024.11 湛江农业科普资料设计大赛三等奖</li>
+                                <li>2024.12 霞山区传统文化遗产建筑设计比赛优秀奖</li>
+                                <li>2025.06 全国大学生创新创业大赛校赛三等奖</li>
+                                <li>2026.05 国际青年大学生创赛优胜奖 ×2</li>
+                            </ul>
+                        </div>
+                        <div class="about-col">
+                            <h3>项目方案企划 <em>PROJECTS</em></h3>
+                            <ul class="honor-list">
+                                <li>花园杯《儋州"日升"产学研生态创享木瓜园设计》</li>
+                                <li>蓝桥杯《南果金萌 · 助农文创设计》校赛 / 省赛三等奖</li>
+                                <li>攀登杯《湛江市固碳释氧园林植物研究》资金立项落地</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills-block">
+                        <p class="script">Skills</p>
+                        <ul class="skill-list">
+                            <li>板绘</li><li>水彩</li><li>马克笔</li><li>PS</li><li>CAD</li><li>LU</li><li>GIS</li><li>SU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="works" class="section works">
+        <div class="container">
+            <div class="part-divider reveal">
+                <span>PART 1</span>
+                <h2>绘画作品</h2>
+                <p class="script">Selected Works</p>
+            </div>
+
+            <div class="works-head reveal">
+                <p class="section-index">02 / WORKS</p>
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="all">全部 <sup>ALL</sup></button>
+                    <button class="filter-btn" data-filter="illustration">插画 <sup>ILLUSTRATION</sup></button>
+                    <button class="filter-btn" data-filter="garden">园林 <sup>GARDEN</sup></button>
+                    <button class="filter-btn" data-filter="ip">IP 形象 <sup>IP</sup></button>
+                    <button class="filter-btn" data-filter="graphic">视觉 <sup>GRAPHIC</sup></button>
+                </div>
+            </div>
+
+            <div class="work-grid" id="workContainer"></div>
+        </div>
+    </section>
+
+    <!-- 经历 -->
+    <section id="experience" class="section experience">
+        <div class="container experience-grid">
+            <div class="reveal">
+                <p class="section-index">03 / EXPERIENCE</p>
+                <p class="script section-script">Experience</p>
+                <h2 class="exp-title">在创作与落地之间，<br>寻找设计的分寸感。</h2>
+            </div>
+            <div class="exp-list reveal" data-delay="1">
+                <div class="exp-item">
+                    <span class="exp-year">2024 — NOW</span>
+                    <div><h3>短视频内容操盘</h3><p>独立完成账号定位、脚本策划、拍摄剪辑，稳定输出内容，单条视频当日播放 1.3w+，熟悉内容逻辑、用户偏好与数据复盘。</p></div>
+                </div>
+                <div class="exp-item">
+                    <span class="exp-year">2025 — NOW</span>
+                    <div><h3>品牌营销策划 &amp; 项目统筹</h3><p>带队完成商业营销策划赛事；负责政务公众号内容编辑、线下暑期活动筹备执行，兼具团队管理、宣传落地、跨场景策划经验。</p></div>
+                </div>
+                <div class="exp-item">
+                    <span class="exp-year">2026 — NOW</span>
+                    <div><h3>校园品牌策划实习</h3><p>协助品牌校园营销活动策划、物料视觉配套，落地品牌宣传相关方案。</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p class="section-index">04 / CONTACT</p>
+            <p class="script footer-script">Let's work together</p>
+            <h2 class="footer-title">期待与你合作</h2>
+            <div class="footer-cols">
+                <div>
+                    <h4>CONTACT ME</h4>
+                    <p>邮箱　<a href="mailto:1031989883@qq.com">1031989883@qq.com</a></p>
+                    <p>微信　Joraro_wife</p>
+                </div>
+                <div>
+                    <h4>QUICK LINKS</h4>
+                    <p><a href="#home">首页</a>　<a href="#about">关于我</a></p>
+                    <p><a href="#works">作品集</a>　<a href="#experience">经历</a></p>
+                </div>
+                <div>
+                    <h4>FIND ME</h4>
+                    <p>GitHub · 作品持续更新中</p>
+                    <p>© 2026 Lyoran Lee</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>ALL RIGHTS RESERVED</span><span>DESIGNED BY 李佳佳</span></div>
+        </div>
+    </footer>
+
+    <!-- 灯箱 -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="作品预览" hidden>
+        <button class="lightbox-close" id="lightboxClose" aria-label="关闭预览">×</button>
+        <figure>
+            <img id="lightboxImg" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
